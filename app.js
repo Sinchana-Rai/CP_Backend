@@ -5,7 +5,7 @@ import cors from "cors";
 import contactRouter from "./router/contactRouter.js";
 import userRouter from "./router/userRouter.js";
 
-// const FRONTEND_URL= `https://sr-cp-frontend.onrender.com`;
+//FRONTEND_URL= `https://sr-cp-frontend.onrender.com`;
 
 const app = express();
 
@@ -13,7 +13,7 @@ dotenv.config({ path: "./config/config.env" });
 
 app.use(cors({
     origin: process.env.FRONTEND_URL, 
-    methods: ["POST" , "DELETE" ], 
+    methods: ["POST" , "DELETE" , "PUT"], 
     credentials: true, 
 }));
 
